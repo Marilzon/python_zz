@@ -5,7 +5,6 @@ y_value = input()
 
 
 def simple_price_sum(x, y):
-
     x_value = float(x.split()[2])
     y_value = float(y.split()[2])
 
