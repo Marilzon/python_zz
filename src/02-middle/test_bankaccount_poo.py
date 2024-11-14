@@ -1,3 +1,4 @@
+import pytest
 from bankaccount_poo import BankAccount, Bank
 
 
@@ -32,8 +33,8 @@ def test_list_accounts():
     bank = Bank()
     voli_account = BankAccount("Volibear", 500)
     master_yi_account = BankAccount("MasterYI", 500)
-    
+
     bank.add_account(voli_account)
     bank.add_account(master_yi_account)
-    
+
     assert bank.list_accounts() == [("Volibear", 500), ("MasterYI", 500)]
